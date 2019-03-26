@@ -1,0 +1,64 @@
+Project: Auction Engine System
+Author: Ariolu Joshua
+
+
+This project shows part of a simple online auction system, which will allow users to bid on items for sale.
+Provide a bid tracker interface and concrete implementation with the following functionality:
+
+1. Record a user's bid on an item, each new bid must be at a higher price than before
+2. Get the current winning bid for an item
+3. Get all the bids for an item
+4. Get all the items on which a user has bid
+
+
+How the program works:
+From the list of items provided by the system. Users can select what items to bid.
+
+
+- First, create client profile that accepts String values (client name & client registration id) as parameters.
+ e.g. Client client1 = new Client("Bright", "SE03");
+
+
+
+- Next, registers client as a bidder and this accepts client Object as its parameter.
+ e.g. Bid bidder1 = new Bid(client1);
+
+
+
+
+-Next stage is for the user to start bidding.
+ e.g.  Auction auction1 = new Auction();
+
+
+
+-The next step is for the user to place a bid (accepts item number, bid Object and an amount(price) as  parameters)
+ e.g.  auction1.placeBid(1,bidder1,2); 
+ where 1= item number and 2= amount
+
+
+
+-The next step is to get the winning bid for an item (accepts item number as its parameter)
+ e.g. auction1.getItemWinningBid(1);
+ where 1 is equal to item number.
+
+
+
+-The next step is to get all the bids for an item and it accepts item number as its parameters.
+ e.g. auction1.getItemBids(1);
+ where 1 is equal to item number.
+
+
+-The next step is to get the current winning bidder for an item and it accepts item number as its parameters.
+ e.g. auction1.getItemWinningBidder(1);
+ where 1 is equal to item number.
+
+The final step is to get all the items for which a bidder has bid for.
+e.g. auction1.getItemsBidFor();
+
+
+
+
+
+
+NOTE
+TO SEE SOME OF THE FUNCTIONS UNCOMMENT THE CODE USEFUL TO THAT SECTION
